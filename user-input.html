@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Input</title>
+    </head>
+    <body>
+        <div>
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name..."  />
+            <button onclick="saveStudentName()">Save Student Name</button>
+        </div>
+        <div>
+            <ol>
+                <li>Biswaranjan B</li>
+            </ol>
+        </div> 
+        <script type="text/javascript">
+            function saveStudentName(){
+               const input = document.getElementsByTagName('input')[0]
+               const orderedList = document.getElementsByTagName('ol')[0]
+               const newLine = document.createElement('li')
+               newLine.innerText = input.value
+               input.value = ""
+               orderedList.appendChild(newLine)
+            }
+        </script>
+    </body>
+</html>

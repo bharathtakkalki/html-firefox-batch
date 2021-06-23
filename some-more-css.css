@@ -1,0 +1,77 @@
+.hover-styling{
+    font-size: 25px;
+    color: red;
+}
+
+.hover-styling:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.hover-styling:active{
+    color: black;
+    cursor: pointer;
+}
+
+.input-focus:focus{
+    outline:none;
+    border:2px solid red;
+
+}
+
+.input-focus:hover{
+    outline:none;
+    border:2px solid gray;
+
+}
+
+.input-focus::placeholder{
+    color: cyan;
+}
+
+.button{
+    min-width:100px;
+    padding:8px 16px;
+    border-style: none;
+    /* background-color: #125D98; */
+    background-color: rgb(18, 93, 152);
+    color:white;
+    margin-left: 16px;
+    transition:1s all ease-in-out;
+
+    box-shadow: 1px 4px 10px 4px rgba(255,192,116,0.75);
+    -webkit-box-shadow: 1px 4px 10px 4px rgba(255,192,116,0.75);
+    -moz-box-shadow: 1px 4px 10px 4px rgba(255,192,116,0.75);
+}
+.button:hover{
+    border-radius: 25px;
+    background-color: #7952B3;
+    color:white;
+}
+
+.button:active{
+    background-color: #FFC107;
+    color:white;
+}
+
+.parent-flex{
+    display: flex;
+    justify-content: space-between;
+    height: 30vh;
+    flex-wrap: wrap;
+}
+.child{
+    width:200px;
+    height:200px;
+   margin-top: 24px;
+}
+
+.one{
+    background-color:#7952B3;
+}
+.two{
+    background-color:#FFC107;
+}
+.three{
+    background-color:rgb(18, 93, 152)
+}

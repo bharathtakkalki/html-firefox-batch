@@ -1,0 +1,5 @@
+.image-background{
+    height:100vh;
+    background-image: url("https://picsum.photos/500");
+    background-size: cover;
+}

@@ -1,0 +1,50 @@
+html{
+    text-align:center;
+}
+h1{
+    color: red;
+    font-size:50px;
+}
+.secondary-header{
+    color: blue;
+    font-size:30px;
+    background-color:gray;
+    animation: animate-headers 3s ease-in-out forwards;
+}
+.black{
+    color: black;
+}
+#black-header{
+    color: black;
+    font-size:15px;
+}
+.tertiary-header{
+    font-size:20px;
+    color: chocolate;
+    background-color:cornsilk;
+}
+#para-styles{
+    background-color:rebeccapurple;
+    color:gray;
+    animation: animate-para 2s ease-in-out infinite alternate;
+}
+
+@keyframes animate-headers {
+    from{
+        opacity: 0;
+        visibility: hidden;
+    }
+    to{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes animate-para {
+    from{
+        font-size:8px;
+    }
+    to{
+        font-size:20px;
+    }
+}
