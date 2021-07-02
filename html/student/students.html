@@ -9,6 +9,7 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
         <img class="logo" src="./hexa.png" alt="logo" />
       </div>
       <div class="action-container">
-        <button class="button primary" style="margin-right: 16px">
+        <button class="button primary" style="margin-right: 16px" onclick="openModal()">
           Sign In
         </button>
         <button class="button outline">Sign Up</button>
@@ -143,5 +144,16 @@
         </div>
       </div>
     </div>
+    <div id="modal-sign-in" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="closeModal()"
+          class="w3-button w3-display-topright">&times;</span>
+          <p>Some text in the Modal..</p>
+          <p>Some text in the Modal..</p>
+        </div>
+      </div>
+    </div>
+    <script src="./Students.js"></script>
   </body>
 </html>
